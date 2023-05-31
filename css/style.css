@@ -1,0 +1,504 @@
+/* Reset CSS Code Start*/
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*===== Sass variables Start======*/
+/*===== Sass variables Start======*/
+.section-title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-title h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 26px;
+  top: -25%;
+  left: 102%;
+  transform: translateY(50%);
+  z-index: 1;
+  background: url("../images/heading-img.png") no-repeat;
+}
+
+.btn-default {
+  display: inline-block;
+  margin-top: 35px;
+  text-decoration: none;
+  background: #000000;
+  color: #fff;
+  padding: 12px 60px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn-default:hover {
+  background: #3b3a3a;
+  color: #fff;
+}
+
+.layout_padding {
+  padding: 90px 0;
+}
+
+.layout_padding2 {
+  padding: 45px 0;
+}
+
+.layout_padding2-top {
+  padding-top: 45px;
+}
+
+.layout_padding2-bottom {
+  padding-bottom: 45px;
+}
+
+.layout_padding-top {
+  padding-top: 90px;
+}
+
+.layout_padding-bottom {
+  padding-bottom: 90px;
+}
+
+/* Reset CSS Code Start*/
+/*   Start Main CSS*/
+/* ======  Start header section ===========*/
+.hero-area {
+  position: relative;
+  height: 130vh;
+  background: url("../images/hero-bg.png") no-repeat;
+  display: inline-block;
+}
+
+.hero-area .header-section {
+  background: #E1F3FD;
+}
+
+.hero-area .header-section a {
+  color: #0fcfdc;
+}
+
+.header-section .custom_nav-container {
+  padding-top: 10px;
+}
+.header-section .custom_nav-container .navbar-brand img {
+  width: 30px;
+}
+.header-section .custom_nav-container .navbar-brand span {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  top: 3px;
+  color: #0fcfdc;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  color: #0fcfdc;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 10px 0;
+  margin-right: 51px;
+  padding-right: 0;
+  padding-left: 0;
+  position: relative;
+}
+.custom_nav-container .navbar-nav .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 18px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #0fcfdc;
+}
+.custom_nav-container .navbar-nav .nav-item .nav-link::before :last-child {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 0;
+  background-color: transparent;
+  display: none;
+}
+.custom_nav-container .navbar-nav .nav-item .nav-link:hover,
+.custom_nav-container .navbar-nav .nav-item .nav-link.active {
+  color: #0c0c0c;
+}
+.custom_nav-container .navbar-nav .nav-item .nav-link:hover::before,
+.custom_nav-container .navbar-nav .nav-item .nav-link.active::before {
+  background: #0c0c0c;
+}
+
+.custom_nav-container .navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.custom_nav-container .navbar-toggler .mobile-nav-icon {
+  display: inline-block;
+  background: url("../images/menu.png");
+  height: 43px;
+  width: 43px;
+  background-size: 43px;
+}
+
+.slider-section .slider-content {
+  padding-top: 230px;
+  padding-right: 10%;
+}
+.slider-section .slider-content h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #3b3a3a;
+}
+.slider-section .slider-content p {
+  margin-bottom: 30px;
+}
+.slider-section .slider-content .hero-btn a {
+  display: inline-block;
+  color: #fff;
+  width: 125px;
+  padding: 2px 0;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.slider-section .slider-content .hero-btn .about-btn {
+  background-color: #0fcfdc;
+}
+.slider-section .slider-content .about-btn:hover {
+  background-color: #0db9c4;
+}
+.slider-section .slider-content .hero-btn .quite-btn {
+  background-color: #000000;
+}
+.slider-section .slider-content .hero-btn .quite-btn:hover {
+  background-color: #333;
+}
+
+.slider_section .carousel_btn-container .carousel-control-prev,
+.slider_section .carousel_btn-container .carousel-control-next {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 100%;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+
+.slider-section .carousel_btn-container .carousel-control-prev {
+  background: url("../images/prev.png") no-repeat;
+  position: absolute;
+  background-size: 20px;
+  left: 134px;
+  top: 493px;
+  opacity: 1;
+  width: 35px;
+  height: 25px;
+}
+
+.slider-section .carousel_btn-container .carousel-control-prev:hover {
+  background: url("../images/prev-blue.png") no-repeat;
+  background-size: 20px;
+}
+
+.slider-section .carousel_btn-container .carousel-control-next {
+  position: absolute;
+  left: 190px;
+  top: 493px;
+  background: url("../images/next.png") no-repeat;
+  background-size: 20px;
+  opacity: 1;
+  width: 35px;
+  height: 25px;
+}
+
+.slider-section .carousel_btn-container .carousel-control-next:hover {
+  background: url("../images/next-blue.png") no-repeat;
+  background-size: 20px;
+}
+
+/*============= Start About us Section ================*/
+.about-section .about-img-rotate {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-section .about-img-rotate .img-box {
+  position: relative;
+  width: 250px;
+  margin: 50px 0;
+}
+.about-section .about-img-rotate .img-box img {
+  width: 100%;
+}
+.about-section .about-img-rotate .img-box .about-img-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  animation: rotateAnimation 3s infinite;
+}
+@keyframes rotateAnimation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+  49% {
+    transform: translate(-50%, -50%) rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) scale(1);
+  }
+}
+.about-section .about-img-rotate .detail-box {
+  margin-top: 35px;
+  text-align: center;
+}
+
+/*============= End About us Section ================*/
+/*============= Start Portfolio Section ================*/
+.portfolio-section {
+  background: #F8FFFF;
+}
+.portfolio-section .portfolio-container {
+  display: flex;
+  flex-direction: row;
+}
+.portfolio-section .img-box {
+  position: relative;
+  margin: 10px;
+}
+.portfolio-section .img-box.xmb {
+  margin-bottom: 20px;
+}
+.portfolio-section .img-box .img-link-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(15, 207, 220, 0.7);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.portfolio-section .img-box .img-link-box a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.portfolio-section .img-box .img-link-box a img {
+  width: 50px;
+  height: 50px;
+}
+.portfolio-section .img-box:hover .img-link-box {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*============= End Portfolio Section ================*/
+/*============= Start Achivement Section ================*/
+.achivement-section .achivement-container {
+  display: flex;
+  justify-content: center;
+}
+.achivement-section .achivement-container .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 250px;
+  width: 275px;
+  text-align: center;
+  border: 1px solid #0fcfdc;
+  margin: 45px 20px 0 20px;
+  padding: 45px 35px 15px 35px;
+}
+.achivement-section .achivement-container .box .image-box {
+  width: 120px;
+  margin: 0 auto;
+}
+.achivement-section .achivement-container .box .image-box img {
+  width: 100%;
+}
+.achivement-section .achivement-container .box .detail-box {
+  margin-top: 15px;
+}
+.achivement-section .achivement-container .box .detail-box h2, .achivement-section .achivement-container .box .detail-box h6 {
+  font-weight: bold;
+}
+.achivement-section .achivement-container .box .detail-box h6 {
+  font-size: 18px;
+}
+
+/*============= End Achivement Section ================*/
+/*============= Start Testimonial Section ================*/
+.testimonial-section .row {
+  align-items: center;
+}
+.testimonial-section .row .col-lg-3 {
+  display: flex;
+  justify-content: flex-end;
+}
+.testimonial-section .testimonial-item {
+  border: 1px solid #0fcfdc;
+  padding: 20px;
+  width: 84%;
+  margin: 0 25px;
+}
+.testimonial-section .testimonial-item h4 {
+  text-transform: uppercase;
+}
+.testimonial-section .btn_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-section .btn_container .carousel-control-prev,
+.testimonial-section .btn_container .carousel-control-next {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  opacity: 1;
+  background-size: 100%;
+  background-position: center;
+  background: #0fcfdc;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.testimonial-section .btn_container .carousel-control-prev:hover,
+.testimonial-section .btn_container .carousel-control-next:hover {
+  background-color: #000000;
+}
+
+/*============= End Testimonial Section ================*/
+/*============= Start Contact Section ================*/
+.contact-setion {
+  background: url("../images/contact-bg.png") no-repeat;
+  background-position: left bottom;
+  padding-bottom: 250px;
+  position: relative;
+}
+.contact-setion .bg-img-1 {
+  width: 100px;
+  position: absolute;
+  top: 45px;
+  right: 100px;
+}
+.contact-setion .bg-img-1 img {
+  width: 100%;
+}
+.contact-setion .bg-img-2 {
+  width: 50px;
+  position: absolute;
+  top: 75px;
+  left: 0;
+}
+.contact-setion .bg-img-2 img {
+  width: 100%;
+}
+.contact-setion .form-container {
+  margin-top: 45px;
+}
+.contact-setion .form-container input {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  color: #000;
+  margin: 15px 0;
+  outline: none;
+}
+.contact-setion .form-container input::-moz-placeholder {
+  color: #000;
+}
+.contact-setion .form-container input::placeholder {
+  color: #000;
+}
+.contact-setion .form-container input[name=message] {
+  margin-top: 55px;
+}
+.contact-setion .form-container button {
+  display: inline-block;
+  margin-top: 30px;
+  background: #0fcfdc;
+  border: none;
+  padding: 12px 50px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+.contact-setion .form-container button:hover {
+  background: #0db9c4;
+}
+.contact-setion .form-container button:focus {
+  background-color: #31d2f2;
+  border-color: #25cff2;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(11, 172, 204, 0.5);
+}
+
+/*============= End Contact Section ================*/
+/*============= Start Footer Area ================*/
+.footer-area {
+  background-color: #211D25;
+  padding: 40px 0 10px 0;
+}
+.footer-area h4 {
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer-area .social-box ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+.footer-area .social-box ul li a {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/*============= End Footer Area ================*//*# sourceMappingURL=style.css.map */

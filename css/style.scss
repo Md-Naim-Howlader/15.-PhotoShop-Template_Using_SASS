@@ -1,0 +1,559 @@
+/* Reset CSS Code Start*/
+/*===== Sass variables Start======*/
+$btn-info-color: #0fcfdc;
+$btn-white-color: #fff;
+$btn-dark-color: #0c0c0c;
+$btn-default-dark-color: #000000;
+/*===== Sass variables Start======*/
+body {
+    font-family: 'Poppins', sans-serif;
+    color: $btn-dark-color;
+    background-color: $btn-white-color;
+    position: relative;
+    scroll-behavior: smooth;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+  .section-title {
+    text-align: center;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    h2 {
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+    }
+    h2::before {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 26px;
+        top: -25%;
+        left: 102%;
+        transform: translateY(50%);
+        z-index: 1;
+        background: url("../images/heading-img.png") no-repeat;
+    }
+  }
+  .btn-default {
+    display: inline-block;
+    margin-top: 35px;
+    text-decoration: none;
+    background: $btn-default-dark-color;
+    color: $btn-white-color;
+    padding: 12px 60px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.1s ease-in-out;
+}
+.btn-default:hover {
+    background: #3b3a3a;
+    color: $btn-white-color;
+
+}
+.layout_padding {
+    padding: 90px 0;
+  }
+
+  .layout_padding2 {
+    padding: 45px 0;
+  }
+
+  .layout_padding2-top {
+    padding-top: 45px;
+  }
+
+  .layout_padding2-bottom {
+    padding-bottom: 45px;
+  }
+
+  .layout_padding-top {
+    padding-top: 90px;
+  }
+
+  .layout_padding-bottom {
+    padding-bottom: 90px;
+  }
+
+  /* Reset CSS Code Start*/
+  /*   Start Main CSS*/
+  /* ======  Start header section ===========*/
+.hero-area {
+    position: relative;
+    height: 130vh;
+    background: url("../images/hero-bg.png") no-repeat;
+    display: inline-block;
+}
+.hero-area .header-section {
+    background: #E1F3FD;
+}
+.hero-area .header-section a {
+    color: $btn-info-color;
+}
+.header-section .custom_nav-container {
+    padding-top: 10px;
+    .navbar-brand img {
+        width: 30px;
+    }
+    .navbar-brand span {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: relative;
+        top: 3px;
+        color: $btn-info-color;
+    }
+
+}
+.custom_nav-container .navbar-nav {
+
+    .nav-item {
+
+         .nav-link {
+            color: $btn-info-color;
+            display: inline-block;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin: 10px 0;
+            margin-right: 51px;
+            padding-right: 0;
+            padding-left: 0;
+            position: relative;
+        }
+
+         .nav-link::before {
+            content: "";
+            position: absolute;
+            left: -10px;
+            top: 18px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color:$btn-info-color;
+        }
+        .nav-link::before :last-child {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-radius: 0;
+            background-color: transparent;
+            display: none;
+        }
+        .nav-link:hover,
+        .nav-link.active
+        {
+            color: $btn-dark-color;
+        }
+        .nav-link:hover::before,
+        .nav-link.active::before
+         {
+            background: $btn-dark-color;
+        }
+
+    }
+
+}
+
+.custom_nav-container .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+.custom_nav-container .navbar-toggler .mobile-nav-icon {
+    display: inline-block;
+    background: url("../images/menu.png");
+    height: 43px;
+    width: 43px;
+    background-size: 43px;
+}
+
+// slider section start
+.slider-section .slider-content {
+    padding-top: 230px;
+    padding-right: 10%;
+    h1 {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        color: #3b3a3a;
+    }
+    p {
+        margin-bottom: 30px;
+    }
+   .hero-btn a {
+        display: inline-block;
+        color: $btn-white-color;
+        width: 125px;
+        padding: 2px 0;
+        line-height: 35px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+    .hero-btn .about-btn {
+        background-color: $btn-info-color;
+    }
+    .about-btn:hover {
+        background-color: #0db9c4;
+    }
+    .hero-btn .quite-btn {
+        background-color: $btn-default-dark-color;
+    }
+    .hero-btn .quite-btn:hover {
+        background-color: #333;
+    }
+}
+.slider_section .carousel_btn-container .carousel-control-prev,
+.slider_section .carousel_btn-container .carousel-control-next {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 100%;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+.slider-section .carousel_btn-container .carousel-control-prev {
+    background: url("../images/prev.png") no-repeat;
+    position: absolute;
+    background-size: 20px;
+    left: 134px;
+    top: 493px;
+    opacity: 1;
+    width: 35px;
+    height: 25px;
+}
+.slider-section .carousel_btn-container .carousel-control-prev:hover {
+    background: url("../images/prev-blue.png") no-repeat;
+    background-size: 20px;
+}
+.slider-section .carousel_btn-container .carousel-control-next {
+    position: absolute;
+    left: 190px;
+    top: 493px;
+    background: url("../images/next.png") no-repeat;
+    background-size: 20px;
+    opacity: 1;
+    width: 35px;
+    height: 25px;
+
+}
+.slider-section .carousel_btn-container .carousel-control-next:hover {
+    background: url("../images/next-blue.png") no-repeat;
+    background-size: 20px;
+}
+
+/*============= Start About us Section ================*/
+.about-section {
+    .about-img-rotate {
+        margin-top: 30px;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+        .img-box {
+            position: relative;
+            width: 250px;
+            margin: 50px 0;
+
+            img {
+                width: 100%;
+            }
+            .about-img-bg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 200%;
+                -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1);
+                        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+                -webkit-animation: rotateAnimation 3s infinite;
+                        animation: rotateAnimation 3s infinite;
+            }
+            @-webkit-keyframes rotateAnimation {
+                0% {
+                  -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1);
+                          transform: translate(-50%, -50%) rotate(0deg) scale(1);
+                }
+                49% {
+                  -webkit-transform: translate(-50%, -50%) rotate(180deg) scale(1.1);
+                          transform: translate(-50%, -50%) rotate(180deg) scale(1.1);
+                }
+                100% {
+                  -webkit-transform: translate(-50%, -50%) rotate(360deg) scale(1);
+                          transform: translate(-50%, -50%) rotate(360deg) scale(1);
+                }
+              }
+
+              @keyframes rotateAnimation {
+                0% {
+                  -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1);
+                          transform: translate(-50%, -50%) rotate(0deg) scale(1);
+                }
+                49% {
+                  -webkit-transform: translate(-50%, -50%) rotate(180deg) scale(1.1);
+                          transform: translate(-50%, -50%) rotate(180deg) scale(1.1);
+                }
+                100% {
+                  -webkit-transform: translate(-50%, -50%) rotate(360deg) scale(1);
+                          transform: translate(-50%, -50%) rotate(360deg) scale(1);
+                }
+              }
+        }
+        .detail-box {
+            margin-top: 35px;
+            text-align: center;
+        }
+    }
+}
+
+/*============= End About us Section ================*/
+/*============= Start Portfolio Section ================*/
+.portfolio-section {
+    background: #F8FFFF;
+    .portfolio-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .img-box {
+        position: relative;
+        margin: 10px;
+    }
+    .img-box.xmb {
+        margin-bottom: 20px;
+    }
+    .img-box .img-link-box {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(15, 207, 220, 0.7);
+
+        a {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+           img {
+            width: 50px;
+            height: 50px;
+           }
+
+        }
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .img-box:hover .img-link-box {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+/*============= End Portfolio Section ================*/
+/*============= Start Achivement Section ================*/
+.achivement-section .achivement-container {
+    display: flex;
+    justify-content: center;
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 250px;
+        width: 275px;
+        text-align: center;
+        border: 1px solid $btn-info-color;
+        margin: 45px 20px 0 20px;
+        padding: 45px 35px 15px 35px;
+        .image-box {
+            width: 120px;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+        }
+        .detail-box {
+            margin-top: 15px;
+            h2, h6{
+                font-weight: bold;
+            }
+            h6 {
+                font-size: 18px;
+            }
+        }
+    }
+}
+/*============= End Achivement Section ================*/
+/*============= Start Testimonial Section ================*/
+.testimonial-section {
+    .row {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        .col-lg-3 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        }
+    }
+    .testimonial-item {
+        border: 1px solid $btn-info-color;
+        padding: 20px;
+        width: 84%;
+        margin: 0 25px;
+        h4 {
+            text-transform: uppercase;
+        }
+    }
+    .btn_container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+                .carousel-control-prev,
+                .carousel-control-next {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    border: none;
+                    border-radius: 50%;
+                    opacity: 1;
+                    background-size: 100%;
+                    background-position: center;
+                    background: $btn-info-color;
+                    margin: 0 5px;
+                    text-decoration: none;
+                }
+                .carousel-control-prev:hover,
+                .carousel-control-next:hover {
+                    background-color: $btn-default-dark-color;
+                }
+
+    }
+
+}
+/*============= End Testimonial Section ================*/
+/*============= Start Contact Section ================*/
+.contact-setion {
+    background: url("../images/contact-bg.png") no-repeat;
+    background-position: left bottom;
+    padding-bottom: 250px;
+    position: relative;
+    .bg-img-1 {
+        width: 100px;
+        position: absolute;
+        top: 45px;
+        right: 100px;
+        img {
+            width: 100%;
+        }
+    }
+    .bg-img-2 {
+        width: 50px;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        img {
+            width: 100%;
+        }
+    }
+    .form-container {
+        margin-top: 45px;
+        input {
+            border: none;
+            border-bottom: 1px solid $btn-default-dark-color;
+            width: 100%;
+            color: $btn-default-dark-color;
+            margin: 15px 0;
+            outline: none;
+        }
+        input::placeholder {
+            color: $btn-default-dark-color;
+        }
+        input[name = "message"] {
+            margin-top: 55px;
+        }
+        button {
+            display: inline-block;
+            margin-top: 30px;
+            background: $btn-bg-color;
+            border: none;
+            padding: 12px 50px;
+            color: $btn-white-color;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+        }
+        button:hover {
+            background: #0db9c4;
+        }
+        button:focus {
+            background-color: #31d2f2;
+            border-color: #25cff2;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba( 11,172,204, 0.5);
+        }
+    }
+}
+/*============= End Contact Section ================*/
+/*============= Start Footer Area ================*/
+.footer-area {
+    background-color: #211D25;
+    padding: 40px 0 10px 0;
+    h4 {
+        color: $btn-white-color;
+        text-transform: uppercase;
+    }
+    .social-box ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+       li {
+
+        a{
+            display: inline-block;
+            margin: 0 5px;
+            color: $btn-white-color;
+            text-decoration: none;
+            border: 1px solid $btn-white-color;
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            border-radius: 50%;
+            text-align: center;
+        }
+       }
+    }
+}
+/*============= End Footer Area ================*/
